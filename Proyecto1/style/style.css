@@ -23,3 +23,37 @@ h1 {
 h1 span{
     font-size: 2rem;
 }
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.nav-primaria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px){
+    .nav-primaria {
+        flex-direction: row;
+    }
+}
+
+.nav-primaria a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.nav-primaria a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
